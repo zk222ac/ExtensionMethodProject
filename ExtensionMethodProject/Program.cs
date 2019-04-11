@@ -10,9 +10,13 @@ namespace ExtensionMethodProject
     {
         static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
+            Calculator cal = new Calculator();
+            int result = cal.Add(1, 2);
+            Console.WriteLine(result);
+
+            var res =  cal.Div(100,50);
+            Console.WriteLine(res);
+
             Console.ReadKey();
 
             // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
